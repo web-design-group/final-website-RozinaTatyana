@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Mouthful Bloom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scale-wrapper">
+    <!-- bootstrap-контейнер -->    
+    <div class="container">
+        <div class="pink-background1">
+            <img src="img/ct2.svg" alt="">
+        </div>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Mouthful Bloom Logo">
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html#catalog">Каталог</a>
+                    <a href="index.html#fillings">Начинки</a>
+                    <a href="index.html#about">О компании</a>
+                </nav>
+                <div class="cart">
+                   <a href = "payment.html"><img src="img/cart.png" alt="Корзина"></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="catalog-hero">
+                <div class="catalog-hero-content">
+                    <div class="catalog-hero-text">
+                        <h1>Mouthful Bloom- dream </h1>
+                    </div>
+                    <div class="catalog-hero-image">
+                        <img src="img/foto1.png" alt="Birthday Cake">
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog-content">
+                <div class="catalog-content-layout">
+                    <div class="catalog-left-column">
+                        <div class="catalog-images-left">
+                            <img src="img/ct1.png" alt="Heart Cakes">
+                        </div>
+                    </div>
+                    <div class="catalog-middle-column">
+                        <div class="catalog-text-block">
+                            <p class="catalog-description">
+                                Креативная кондитерская «Mouth'Bloom» специализируется на создании красивых десертов маленьких, стильных и индивидуальных десертов, которые становятся центром внимания любого события.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-section">
+                <div class="cart-container">
+                    <h1 class="cart-title">Корзина</h1>
+                <!-- Центровка блока -->
+                    <div class="cart-form mx-auto">
+                        <div class="cart-info-section">
+                            <h2 class="cart-section-title">Информация</h2>
+                            <div class="cart-form-group">
+                                <!-- Формы -->
+                                <input type="email" class="cart-input" placeholder="Email" required>
+                            </div>
+                            <div class="cart-form-group">
+                                <input type="tel" class="cart-input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="cart-form-group">
+                                <input type="text" class="cart-input" placeholder="Имя" required>
+                            </div>
+                            <div class="cart-form-group">
+                                <!-- Управление формой -->
+                                <textarea class="cart-textarea" placeholder="Комментарии к заказу" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="cart-pickup-section">
+                            <h2 class="cart-section-title">Дата самовывоза</h2>
+                            <div class="cart-form-group">
+                                <input type="date" class="cart-input cart-date-input" required readonly autocomplete="off">
+                            </div>
+                            
+                            <div class="cart-form-group">
+                                <!-- Выпадающий список -->
+                                <select class="cart-select" required>
+                                    <option value="">Время</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="cart-payment-section">
+                            <h2 class="cart-section-title">Оплата картой</h2>
+                            <div class="cart-form-group">
+                                <input type="text" class="cart-input" placeholder="Номер карты" maxlength="19" required>
+                            </div>
+                            <!-- Сетка -->
+                            <div class="cart-form-row row g-3">
+                                <div class="cart-form-group cart-form-half col-12 col-md-6">
+                                    <input type="text" class="cart-input" placeholder="ММ/ГГ" maxlength="5" required>
+                                </div>
+                                <div class="cart-form-group cart-form-half col-12 col-md-6">
+                                    <input type="text" class="cart-input" placeholder="CVV-код" maxlength="3" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-order-section">
+                            <h2 class="cart-section-title">О заказе</h2>
+                            <div class="cart-order-total">
+                                <span class="cart-total-label">Общая стоимость товаров</span>
+                                <span class="cart-total-price">2150 руб.</span>
+                            </div>
+                        </div>
+                        <!-- Кнопка -->
+                        <button type="submit" class="cart-submit-btn w-100">Оплатить товар</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <a class="social-link">
+                        <img src="img/inst.svg" alt="Instagram" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                    <a class="social-link">
+                        <img src="img/vk.svg" alt="VK" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                    <a class="social-link">
+                        <img src="img/tg.svg" alt="Telegram" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                </div>
+                <div class="footer-logo">
+                    <a href="#" id="scrollToTop">
+                        <img src="img/logo.png" alt="Mouthful Bloom" class="footer-logo-img">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    
+    <div class="modal-overlay" id="modalOverlay">
+        <section class="window">
+            <div class="window-card">
+                <div class="window-card-img">
+                    <img src="img/winow.png" width="556" height="443" alt="Cake">
+                </div>
+                <div class="window-card-title">
+                    <div class="window-card-title-head">
+                        <h2>HB, princess</h2>
+                        <a href="#" id="closeModal"><img src="img/cross.png" width="55" height="55" alt="Close"></a>
+                    </div>
+                    <h1>Артикул: t57_2</h1>
+                    <p>Бенто-торт<br>Диаметр: 11 см, высота 6-7 см<br>Вес: 400-450 г (в зависимости от начинки)<br>Коробочка: 16х16 см</p><br>
+                    <p>Данный размер подходит на 1-3 человек<br>В набор входит ложечка и свечкаКоробочка завязывается лентой и упаковывается в крафтовый пакет.</p><br>
+                    <p>Начинка по умолчанию Медовик </p>
+                    <h2 class="window-h2">1890 р.</h2>
+                    <div>
+                        <a class="window-a" href="#" data-text="Заказать">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="paymentSuccessModal" class="payment-modal">
+        <div class="payment-modal-content">
+            <span class="payment-close">&times;</span>
+            <h2>Заказ оплачен!</h2>
+            <p>Номер заказа #<span id="orderNumber"></span></p>
+            <button class="payment-ok">OK</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

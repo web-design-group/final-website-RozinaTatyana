@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Mouthful Bloom</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scale-wrapper">
+    <div class="container">
+        <div class="pink-background1">
+            <img src="img/ct2.svg" alt="">
+        </div>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Mouthful Bloom Logo">
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html#catalog">Каталог</a>
+                    <a href="index.html#fillings">Начинки</a>
+                    <a href="index.html#about">О компании</a>
+                </nav>
+                <div class="cart">
+                    <a href = "payment.html"><img src="img/cart.png" alt="Корзина"></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="catalog-hero">
+                <div class="catalog-hero-content">
+                    <div class="catalog-hero-text">
+                        <h1>Mouthful Bloom- dream </h1>
+                    </div>
+                    <div class="catalog-hero-image">
+                        <img src="img/foto1.png" alt="Birthday Cake">
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog-content">
+                <div class="catalog-content-layout">
+                    <div class="catalog-left-column">
+                        <div class="catalog-images-left">
+                            <img src="img/ct1.png" alt="Heart Cakes">
+                        </div>
+                    </div>
+                    <div class="catalog-middle-column">
+                        <div class="catalog-text-block">
+                            <p class="catalog-description">
+                                Креативная кондитерская «Mouth'Bloom» специализируется на создании красивых десертов маленьких, стильных и индивидуальных десертов, которые становятся центром внимания любого события.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <main>
+            <section class="catalog-page-section">
+                <div class="catalog-page-container">
+                    <div class="catalog-page-header">
+                        <h2 class="catalog-page-title">Каталог</h2>
+                        <div class="catalog-page-controls">
+                            <div class="catalog-page-search-box">
+                                <input type="text" id="searchInput" placeholder="Поиск..." class="catalog-page-search-input">
+                                <svg class="catalog-page-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="6" stroke="#6B1312" stroke-width="2"/>
+                                    <path d="M12.5 12.5L17 17" stroke="#6B1312" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <select id="filterSelect" class="catalog-page-filter-select">
+                                <option value="all">Все товары</option>
+                                <option value="price-asc">Цена: по возрастанию</option>
+                                <option value="price-desc">Цена: по убыванию</option>
+                                <option value="name-asc">Название: А-Я</option>
+                                <option value="name-desc">Название: Я-А</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-page-grid" id="catalogGrid">
+                        <div class="catalog-page-card" data-name="НВ, princess" data-price="1890">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c1.png" alt="НВ, princess">
+                            </div>
+                            <h3 class="catalog-page-card-title">НВ, princess</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_1</p>
+                            <p class="catalog-page-card-price">1890 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Тортик для мамы" data-price="1690">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c2.png" alt="Тортик для мамы">
+                            </div>
+                            <h3 class="catalog-page-card-title">Тортик для мамы</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_2</p>
+                            <p class="catalog-page-card-price">1690 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Тортик на годик" data-price="1650">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c3.png" alt="Тортик на годик">
+                            </div>
+                            <h3 class="catalog-page-card-title">Тортик на годик</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_3</p>
+                            <p class="catalog-page-card-price">1650 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Моей" data-price="1990">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c4.png" alt="Моей">
+                            </div>
+                            <h3 class="catalog-page-card-title">Моей</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_4</p>
+                            <p class="catalog-page-card-price">1990 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Бенто для подруги" data-price="1790">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c5.png" alt="Бенто для подруги">
+                            </div>
+                            <h3 class="catalog-page-card-title">Бенто для подруги</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_5</p>
+                            <p class="catalog-page-card-price">1790 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Нашей принцессе" data-price="1660">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c6.png" alt="Нашей принцессе">
+                            </div>
+                            <h3 class="catalog-page-card-title">Нашей принцессе</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_6</p>
+                            <p class="catalog-page-card-price">1660 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Сердечко розовое" data-price="1950">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c7.png" alt="Сердечко розовое">
+                            </div>
+                            <h3 class="catalog-page-card-title">Сердечко розовое</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_7</p>
+                            <p class="catalog-page-card-price">1950 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Любимой маме" data-price="1590">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c8.png" alt="Любимой маме">
+                            </div>
+                            <h3 class="catalog-page-card-title">Любимой маме</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_8</p>
+                            <p class="catalog-page-card-price">1590 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Happy Birthday" data-price="1940">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c9.png" alt="Happy Birthday">
+                            </div>
+                            <h3 class="catalog-page-card-title">Happy Birthday</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_9</p>
+                            <p class="catalog-page-card-price">1940 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Тортик НВ" data-price="1680">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c10.png" alt="Тортик НВ">
+                            </div>
+                            <h3 class="catalog-page-card-title">Тортик НВ</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_10</p>
+                            <p class="catalog-page-card-price">1680 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="На юбилей" data-price="1770">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c11.png" alt="На юбилей">
+                            </div>
+                            <h3 class="catalog-page-card-title">На юбилей</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_11</p>
+                            <p class="catalog-page-card-price">1770 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                        
+                        <div class="catalog-page-card" data-name="Детка ты просто" data-price="1880">
+                            <div class="catalog-page-card-image">
+                                <img src="img/catalog/c12.png" alt="Детка ты просто">
+                            </div>
+                            <h3 class="catalog-page-card-title">Детка ты просто</h3>
+                            <p class="catalog-page-card-article">Артикул: t01_12</p>
+                            <p class="catalog-page-card-price">1880 р.</p>
+                            <button class="catalog-page-card-button" data-text="Заказать">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <a class="social-link">
+                        <img src="img/inst.svg" alt="Instagram" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                    <a class="social-link">
+                        <img src="img/vk.svg" alt="VK" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                    <a class="social-link">
+                        <img src="img/tg.svg" alt="Telegram" class="social-icon">
+                        <span class="social-text">@mouthful_bloom</span>
+                    </a>
+                </div>
+                <div class="footer-logo">
+                    <a href="#" id="scrollToTop">
+                        <img src="img/logo.png" alt="Mouthful Bloom" class="footer-logo-img">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    
+    <div class="modal-overlay" id="modalOverlay">
+        <section class="window">
+            <div class="window-card">
+                <div class="window-card-img">
+                    <img src="img/winow.png" width="556" height="443" alt="Cake">
+                </div>
+                <div class="window-card-title">
+                    <div class="window-card-title-head">
+                        <h2>HB, princess</h2>
+                        <a href="#" id="closeModal"><img src="img/cross.png" width="55" height="55" alt="Close"></a>
+                    </div>
+                    <h1>Артикул: t57_2</h1>
+                    <p>Бенто-торт<br>Диаметр: 11 см, высота 6-7 см<br>Вес: 400-450 г (в зависимости от начинки)<br>Коробочка: 16х16 см</p><br>
+                    <p>Данный размер подходит на 1-3 человек<br>В набор входит ложечка и свечкаКоробочка завязывается лентой и упаковывается в крафтовый пакет.</p><br>
+                    <p>Начинка по умолчанию Медовик </p>
+                    <h2 class="window-h2">1890 р.</h2>
+                    <div>
+                        <a class="window-a" href="payment.html" data-text="Заказать">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
