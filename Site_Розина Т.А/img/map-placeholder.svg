@@ -1,7 +1,0 @@
-<svg width="610" height="267" viewBox="0 0 610 267" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="610" height="267" fill="#E8F5E8"/>
-    <rect x="50" y="50" width="510" height="167" fill="#C8E6C9" rx="8"/>
-    <circle cx="305" cy="133" r="8" fill="#6B1312"/>
-    <path d="M305 125L310 140L300 140Z" fill="#6B1312"/>
-    <text x="305" y="160" text-anchor="middle" fill="#6B1312" font-family="Arial" font-size="12">Карта</text>
-</svg>
