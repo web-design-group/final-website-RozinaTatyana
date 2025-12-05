@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина - Mouthful Bloom</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="scale-wrapper">
-    <!-- bootstrap-контейнер -->    
     <div class="container">
         <div class="pink-background1">
             <img src="img/ct2.svg" alt="">
@@ -48,7 +47,7 @@
                 </div>
             </section>
 
-            <section class="catalog-content">
+            <div class="catalog-content">
                 <div class="catalog-content-layout">
                     <div class="catalog-left-column">
                         <div class="catalog-images-left">
@@ -63,17 +62,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <section class="cart-section">
                 <div class="cart-container">
                     <h1 class="cart-title">Корзина</h1>
-                <!-- Центровка блока -->
-                    <div class="cart-form mx-auto">
+                <div class="cart-form mx-auto">
                         <div class="cart-info-section">
                             <h2 class="cart-section-title">Информация</h2>
                             <div class="cart-form-group">
-                                <!-- Формы -->
                                 <input type="email" class="cart-input" placeholder="Email" required>
                             </div>
                             <div class="cart-form-group">
@@ -83,7 +80,6 @@
                                 <input type="text" class="cart-input" placeholder="Имя" required>
                             </div>
                             <div class="cart-form-group">
-                                <!-- Управление формой -->
                                 <textarea class="cart-textarea" placeholder="Комментарии к заказу" rows="3"></textarea>
                             </div>
                         </div>
@@ -95,7 +91,6 @@
                             </div>
                             
                             <div class="cart-form-group">
-                                <!-- Выпадающий список -->
                                 <select class="cart-select" required>
                                     <option value="">Время</option>
                                     <option value="10:00">10:00</option>
@@ -116,7 +111,6 @@
                             <div class="cart-form-group">
                                 <input type="text" class="cart-input" placeholder="Номер карты" maxlength="19" required>
                             </div>
-                            <!-- Сетка -->
                             <div class="cart-form-row row g-3">
                                 <div class="cart-form-group cart-form-half col-12 col-md-6">
                                     <input type="text" class="cart-input" placeholder="ММ/ГГ" maxlength="5" required>
@@ -134,7 +128,6 @@
                                 <span class="cart-total-price">2150 руб.</span>
                             </div>
                         </div>
-                        <!-- Кнопка -->
                         <button type="submit" class="cart-submit-btn w-100">Оплатить товар</button>
                     </div>
                 </div>
@@ -200,7 +193,6 @@
             <button class="payment-ok">OK</button>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

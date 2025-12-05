@@ -1153,7 +1153,7 @@ main {
 
 @media (max-width: 2100px) {
     .scale-wrapper {
-        transform: scale(calc(100vw / 2100));
+        /* transform: scale(calc(100vw / 2100)); */
         transform-origin: top center;
     }
 }
@@ -2280,7 +2280,7 @@ main {
     max-width: 1920px;
     width: 100%;
     max-width: 1520px;
-    background-image: url("fon.png");
+    background-image: url("../img/fon.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2345,7 +2345,7 @@ main {
     width: 100%;
     height: 740px;
     max-width: 1520px;
-    background-image: url("fon2.png");
+    background-image: url("../img/fon2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

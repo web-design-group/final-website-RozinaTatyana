@@ -145,7 +145,6 @@ main {
     position: relative;
     z-index: 5;
 }
-/* название и картинка*/
 .catalog-hero {
     width: 100%;
     display: grid;
@@ -734,7 +733,6 @@ main {
     resize: vertical;
     min-height: 80px;
 }
-/* Добавлена стрелка */
 .cart-select {
     cursor: pointer;
     background-image: url("img/arrow_down.svg");
@@ -748,7 +746,6 @@ main {
     display: none;
 }
 
-/* Добавлена иконка календаря */
 .cart-date-input {
     background-image: url("img/calendar.svg");
     background-repeat: no-repeat;
@@ -831,7 +828,7 @@ main {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
-    background-color: nnoe;
+    background-color: transparent;
 }
 
 .custom-datepicker-day:hover { background: rgba(107, 19, 18, 0.08); }
@@ -980,7 +977,6 @@ main {
         width: 100%;
         justify-self: center;
     }
-    /* Remove multi-column grid on mobile for catalog content layout */
     .catalog-content-layout {
         grid-template-columns: none !important;
         column-gap: 0;

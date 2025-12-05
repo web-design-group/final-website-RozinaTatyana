@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         titleEl.textContent = `${MONTHS[month]} ${year}`;
 
         gridEl.innerHTML = '';
-        const firstDayIndex = (new Date(year, month, 1).getDay() + 6) % 7; // Пн = 0
+        const firstDayIndex = (new Date(year, month, 1).getDay() + 6) % 7;
         const daysInMonth = new Date(year, month + 1, 0).getDate();
         const daysPrev = new Date(year, month, 0).getDate();
 
@@ -206,7 +206,6 @@ const intervalCheck = setInterval(function() {
     }
 }, 500);
 
-// 3. Слайдер каталога
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.catalog-track');
     const cards = document.querySelectorAll('.catalog-card');
